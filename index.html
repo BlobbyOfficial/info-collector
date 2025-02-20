@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Collector 🔍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Info Collector</h1>
+        <p>Answer some fun questions, and we'll guess details about you! 😉</p>
+        
+        <div id="question-box">
+            <p id="question">Loading question...</p>
+            <input type="text" id="answer" placeholder="Type your answer..." />
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div id="results" style="display: none;">
+            <h2>Your Results 🎉</h2>
+            <p id="final-guess"></p>
+            <button onclick="shareResults()">Share 📤</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
